@@ -336,6 +336,24 @@ public class EventTemplateHandlerTest {
             LOG.error(e.getMessage(),e);
         }
     }
+    
+    @Test
+    public void testEventParserWithEventEiffelArtifactPublishedEvent() {
+        try {
+            testParser("EiffelArtifactPublishedEvent");
+        } catch (Exception e) {
+            LOG.error(e.getMessage(),e);
+        }
+    }
+    
+    @Test
+    public void testEventParserWithEventEiffelIssueDefinedEvent() {
+        try {
+            testParser("EiffelIssueDefinedEvent");
+        } catch (Exception e) {
+            LOG.error(e.getMessage(),e);
+        }
+    }
 
     private void testParser(String EventName) {
         try {

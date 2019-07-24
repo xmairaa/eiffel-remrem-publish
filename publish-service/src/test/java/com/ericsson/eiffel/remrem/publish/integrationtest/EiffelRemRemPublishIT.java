@@ -37,6 +37,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.ericsson.eiffel.remrem.protocol.MsgService;
 import com.ericsson.eiffel.remrem.publish.config.PropertiesConfig;
+import com.ericsson.eiffel.remrem.publish.exception.RemRemPublishException;
 import com.ericsson.eiffel.remrem.publish.helper.PublishUtils;
 import com.ericsson.eiffel.remrem.publish.helper.RMQHelper;
 import com.ericsson.eiffel.remrem.publish.service.MessageService;
@@ -65,7 +66,7 @@ public class EiffelRemRemPublishIT {
     RMQHelper rmqHelper;
 
     @Before
-    public void setUp() {
+    public void setUp() throws RemRemPublishException {
         RestAssured.port = port;
         rmqHelper.rabbitMqPropertiesInit(protocol);
         rmqHelper.getRabbitMqPropertiesMap().get(protocol).setHost(host);
@@ -108,7 +109,7 @@ public class EiffelRemRemPublishIT {
             JsonParser parser = new JsonParser();
             JsonElement json = parser.parse(new FileReader(file)).getAsJsonObject();
             String routingKey = messageService.generateRoutingKey(json.getAsJsonObject(), null, null, null);
-            assertEquals("eiffel.activity.finished.notag.example.domain", routingKey);
+            assertEquals("eiffel.activity.finished.notag.eiffeltest", routingKey);
         }
     }
  }

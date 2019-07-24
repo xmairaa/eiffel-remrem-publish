@@ -1,3 +1,45 @@
+## 2.0.2
+- Uplifted eiffel-remrem-parent version from 2.0.0 to 2.0.1.
+- Uplifted eiffel-remrem-shared version from 2.0.0 to 2.0.1.
+- Uplifted eiffel-remrem-semantics version from 2.0.4 to 2.0.5.
+- Fixed generateAndPublish endpoint to load generate server properties from config.properties file.
+- Added functionality to load Generate server properties from JAVA_OPTS.
+
+## 2.0.1
+- Fix for Invalid exchange return success. Added a createExchangeIfNotExisting property to create an exchange.
+- For CLI Added a option create_exchange or ce to create Exchange.
+- Upgraded eiffel-remrem-semantics version from 2.0.3 to 2.0.4.
+
+## 2.0.0
+- Upgraded eiffel-remrem-semantics version from 1.0.1 to 2.0.3
+- Modified test cases as per agen version and tested with proper data
+
+## 1.0.3
+- Fixed broken application properties while encrypting/decrypting open text properties.
+
+## 1.0.2
+- Fixed broken expected_parsed json files for some events.
+
+## 1.0.1
+- Changed link from http://ericsson.github.io to https://eiffel-community.github.io.
+- Upgraded eiffel-remrem-semantics version from 1.0.0 to 1.0.1.
+
+## 1.0.0
+- Upgraded eiffel-remrem-parent version from 0.0.8 to 1.0.0.
+- Upgraded eiffel-remrem-shared version from 0.4.2 to 1.0.0.
+- Upgraded eiffel-remrem-semantics version from 0.5.3 to 1.0.0.
+
+## 0.6.10
+- Fixed the publish-Cli logger and lang3 jar issues and property loading errors.  
+
+## 0.6.9
+- Upgraded eiffel-remrem-parent version from 0.0.7 to 0.0.8.
+- Upgraded eiffel-remrem-shared version from 0.4.1 to 0.4.2.
+- Upgraded eiffel-remrem-semantics version from 0.5.2 to 0.5.3.
+
+## 0.6.8
+- Adaptation of Spring application to execute without external Tomcat installation.
+
 ## 0.6.7
 - Upgraded eiffel-remrem-parent version from 0.0.6 to 0.0.7.
 - Upgraded eiffel-remrem-shared version from 0.4.0 to 0.4.1.
